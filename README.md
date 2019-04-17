@@ -176,7 +176,7 @@ For more detail, please refer to our [paper](https://arxiv.org/abs/1807.02758) .
 
 Visual comparisons over four datasets (Set5, Set14, B100 and Urban100) for ×4 scale
 
-![](C:\Users\SuseikeWang\Desktop\AWSRN\figs\vis.png)
+![](./figs/vis.png)
 
 ## TODO
 
