@@ -78,12 +78,13 @@ class LFB(nn.Module):
         self.x_scale = Scale(1)
 
     def forward(self, x):
+        s = x
         out=[]
         for i in range(self.n):
             x = self.lfl[i](x)
             out.append(x)
         res = self.reduction(torch.cat(out,dim=1))
-        return self.res_scale(res) + self.x_scale(x)
+        return self.res_scale(res) + self.x_scale(s)
 
 
 class MODEL(nn.Module):
